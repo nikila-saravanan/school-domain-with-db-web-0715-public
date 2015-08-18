@@ -96,7 +96,7 @@ describe Student do
 
   describe '::new_from_db' do
     it 'creates an instance with corresponding attribute values' do
-      row = [1, "Avi", "Teacher", "aviflombaum", "aviflombaum", "http://aviflombaum.com", "http://aviflombaum.com/picture.jpg"]
+      row = [1, "Avi", "Teacher", "aviflombaum", "aviflombaum", "http://aviflombaum.com", "http://aviflombaum.com/picture.jpg","aviflombaum"]
       avi = Student.new_from_db(row)
 
       expect(avi.id).to eq(row[0])
